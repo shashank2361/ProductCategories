@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductCategories.Core", "Core\ProductCategories.Core.csproj", "{7B740A73-5B6E-4079-958C-C5DCFFD8D5D9}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductCategories.Data", "Data\ProductCategories.Data.csproj", "{B6D857CD-FFE2-4CB5-89E6-0812D7C2B906}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductCategories.Service", "ProductCategories.Service\ProductCategories.Service.csproj", "{0ACA82FC-628E-449B-A271-51A4FEBA126C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductCategories.Api", "ProductCategories.Api\ProductCategories.Api.csproj", "{9B275B07-947F-40CD-BF63-16CFC0C969F2}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductCategories.Test", "ProductCategories.Test\ProductCategories.Test.csproj", "{5C7E5F3D-17AF-4A0C-A12B-F23B34DC3398}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductCategories.UI", "ProductCategories.UI\ProductCategories.UI.csproj", "{2850C3C5-15BB-45EA-BFA4-F5A0FBF9CB39}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductCategories.UI", "ProductCategories.UI\ProductCategories.UI.csproj", "{2850C3C5-15BB-45EA-BFA4-F5A0FBF9CB39}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductCategories.Core", "ProductCategories.Core\ProductCategories.Core.csproj", "{0DFA115C-551D-4099-9C79-783EB6E4AA01}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductCategories.Data", "ProductCategories.Data\ProductCategories.Data.csproj", "{DEA78CB5-A4C7-4483-8AA9-42A8CBA05010}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,14 +21,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7B740A73-5B6E-4079-958C-C5DCFFD8D5D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7B740A73-5B6E-4079-958C-C5DCFFD8D5D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7B740A73-5B6E-4079-958C-C5DCFFD8D5D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7B740A73-5B6E-4079-958C-C5DCFFD8D5D9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B6D857CD-FFE2-4CB5-89E6-0812D7C2B906}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B6D857CD-FFE2-4CB5-89E6-0812D7C2B906}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B6D857CD-FFE2-4CB5-89E6-0812D7C2B906}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B6D857CD-FFE2-4CB5-89E6-0812D7C2B906}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0ACA82FC-628E-449B-A271-51A4FEBA126C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0ACA82FC-628E-449B-A271-51A4FEBA126C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0ACA82FC-628E-449B-A271-51A4FEBA126C}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -45,6 +37,14 @@ Global
 		{2850C3C5-15BB-45EA-BFA4-F5A0FBF9CB39}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2850C3C5-15BB-45EA-BFA4-F5A0FBF9CB39}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2850C3C5-15BB-45EA-BFA4-F5A0FBF9CB39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DFA115C-551D-4099-9C79-783EB6E4AA01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DFA115C-551D-4099-9C79-783EB6E4AA01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DFA115C-551D-4099-9C79-783EB6E4AA01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DFA115C-551D-4099-9C79-783EB6E4AA01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEA78CB5-A4C7-4483-8AA9-42A8CBA05010}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEA78CB5-A4C7-4483-8AA9-42A8CBA05010}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEA78CB5-A4C7-4483-8AA9-42A8CBA05010}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEA78CB5-A4C7-4483-8AA9-42A8CBA05010}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

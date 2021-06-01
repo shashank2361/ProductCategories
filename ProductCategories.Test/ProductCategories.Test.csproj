@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
@@ -23,9 +23,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Core\ProductCategories.Core.csproj" />
-    <ProjectReference Include="..\Data\ProductCategories.Data.csproj" />
     <ProjectReference Include="..\ProductCategories.Api\ProductCategories.Api.csproj" />
+    <ProjectReference Include="..\ProductCategories.Core\ProductCategories.Core.csproj" />
+    <ProjectReference Include="..\ProductCategories.Data\ProductCategories.Data.csproj" />
     <ProjectReference Include="..\ProductCategories.Service\ProductCategories.Service.csproj" />
   </ItemGroup>
 

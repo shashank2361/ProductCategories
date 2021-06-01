@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Core\ProductCategories.Core.csproj" />
+    <ProjectReference Include="..\ProductCategories.Core\ProductCategories.Core.csproj" />
     <ProjectReference Include="..\ProductCategories.Service\ProductCategories.Service.csproj" />
   </ItemGroup>
 
