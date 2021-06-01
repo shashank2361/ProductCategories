@@ -181,5 +181,51 @@ namespace ProductCategories.Test
 
 
         }
+            [Fact]
+        public async Task ProductController_CreateHomeProduct_ReturnCreatedOK()
+        {
+            //Arrange  
+            var controller = new ProductController(_productService, _mapper, logger);
+            var numProducts = _context.Products.Where(x => x.CategoryId == (int)CategoryEnum.Home).Count();
+
+
+            var testhomeProduct = new Core.Models.Product() { Sku = 10003, Name = "Sofa", Description = "Sofa Platinum", Price = Convert.ToDecimal(101.50), CategoryId = 1 };
+            //Act
+            var result = await controller.CreateProduct( testhomeProduct);
+            var createdResult = result.Result as CreatedAtActionResult;
+             var numProductsaft = _context.Products.Where(x => x.CategoryId == (int)CategoryEnum.Home).Count();
+            //Assert
+            Assert.IsType<CreatedAtActionResult>(createdResult);
+
+            Assert.Equal(numProductsaft, numProducts + 1);
+
+
+
+
+        }
+
+        [Fact]
+        public async Task ProductController_CreateHomeProduct_ReturnBadRequest()
+        {
+            //Arrange  
+            var controller = new ProductController(_productService, _mapper, logger);
+ 
+
+            var testhomeProduct = new Core.Models.Product() { Sku = 10, Name = "Sofa", Description = "Sofa Platinum", Price = Convert.ToDecimal(101.50), CategoryId = 1 };
+            //Act
+            var result = await controller.CreateProduct(testhomeProduct);
+            var badReqResult = result.Result as BadRequestObjectResult;
+             //Assert
+            Assert.IsType<BadRequestObjectResult>(badReqResult);
+
+           
+
+
+
+
+        }
+
+
+
     }
 }

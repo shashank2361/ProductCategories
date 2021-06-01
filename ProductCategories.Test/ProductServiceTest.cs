@@ -74,7 +74,7 @@ namespace ProductCategories.Test
 
 
             [Fact]
-        public async Task ProductService_CreateMusic_SaveSuccess()
+        public async Task ProductService_CreateProduct_SaveSuccess()
         {
 
             //Arrange
@@ -107,6 +107,7 @@ namespace ProductCategories.Test
 
 
         }
+
 
 
     }

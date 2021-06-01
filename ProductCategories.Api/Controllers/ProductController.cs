@@ -3,6 +3,7 @@ using Data.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using ProductCategories.Api.Validations;
 using ProductCategories.Core.Services;
 using System;
 using System.Collections.Generic;
@@ -79,6 +80,14 @@ namespace ProductCategories.Api.Controllers
         [HttpPost]
         public async Task<ActionResult<Product>> CreateProduct(Core.Models.Product homeproduct)
         {
+
+            var validator = new SaveProductValidator();
+            var validationResult = await validator.ValidateAsync(homeproduct);
+
+            if (!validationResult.IsValid)
+                return BadRequest(validationResult.Errors);
+
+
             var product = _mapper.Map<Core.Models.Product, Product>(homeproduct);
             var newproducts = await productService.CreateProduct(product);
             return CreatedAtAction(nameof(GetProductById), new { id = newproducts.Id }, newproducts);
