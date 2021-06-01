@@ -24,9 +24,7 @@ namespace ProductCategories.UI
 
                 RunAsync().GetAwaiter().GetResult();
 
-            //var services = ConfigureServices();
-            //var serviceProvider = services.BuildServiceProvider();
-            //serviceProvider.GetService<ProductConsole>().RunAsync().Wait();
+             
         }
 
         private static async Task RunAsync()
