@@ -97,28 +97,7 @@ namespace ProductCategories.UI
 
 
 
-
-
-
-        private static IServiceCollection ConfigureServices()
-        {
-            ServiceCollection services = new ServiceCollection();
-
-            var config = LoadConfiguration();
-            services.AddSingleton(config);
-            return services;
-
-
-        }
-
-        public static IConfiguration LoadConfiguration()
-        {
-            var builder = new ConfigurationBuilder()
-             .SetBasePath(Directory.GetCurrentDirectory())
-             .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
-
-            return builder.Build();
-        }
+         
 
 
     }
